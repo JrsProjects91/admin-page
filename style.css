@@ -1,0 +1,88 @@
+body {
+    background-color: black;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    }
+
+.dashboard-container {
+    width: 70%;
+    height: 100%;
+    display: grid;
+    grid-template: 1fr 4fr / 1fr 4fr;
+}
+
+.sidebar{
+    background-color: #118BCD;
+    grid-area: 1 / 1 / 5 / 2;
+    display: grid;
+    grid-template-rows: 1fr 3fr 2fr 3fr;
+    gap: 10px;
+    padding: 10px 0 10px 10px;
+    color: #FFFFFF;
+}
+
+.header-container {
+    background-color: #FFFFFF;
+    grid-area: 1 / 2 / 2 / 5;
+    display: grid;
+    grid-template-rows: 2fr 5fr;
+    gap: 10px;
+    padding: 10px;
+}
+
+.content-container {
+    background-color: #DEE5EE;
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    grid-auto-flow: column;
+    padding: 0px 10px 5rem 10px;
+}
+
+.header-search-container{
+    border: solid 3px lightgray;
+}
+
+.header-user-links {
+    border: solid 3px lightgray;
+}
+
+.content-container-left {
+    border: solid 3px lightgray;
+    display: grid;
+    grid-template-rows: 1fr repeat(3, 4fr);
+    padding-right: 5px;
+}
+
+.content-container-right {
+    border: solid 3px lightgray;
+    display: grid;
+    grid-template: 1fr 5fr 1fr 5fr / 1fr;
+    padding-right: 1rem;
+}
+
+.sidebar-title, .sidebar-nav, .sidebar-settings {
+    border: solid 3px lightgray;
+}
+
+.content-card-container {
+    display: grid;
+    grid-area: 2 / 1 / 5 / 2;
+    grid-template: 1fr 1fr 1fr / 1fr 1fr;
+    gap: 1rem;
+    padding: 0 1rem 0 1rem; 
+
+}
+
+.card {
+    border: solid 3px lightgray;
+    background-color: #FFFFFF;
+    display: grid;
+    
+}
+
+.card-info, .card-actions, .card-pages {
+    border: solid 3px lightgray;
+    display: flex;
+}
